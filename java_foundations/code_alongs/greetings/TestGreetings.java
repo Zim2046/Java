@@ -1,10 +1,18 @@
-public class Test {
+public class TestGreetings {
 //  👇 A fucntion that belongs to a class -> a main method
 //  |<--'function' -->| 
 //  |<-- keyword   -->|  👇 name of function
     public static void main(String[] args) {
                            //👆arguments👆
-        System.out.println("Hello World!");
+
+    	// To use the greetings methods
+    	// create a variable of type Greetings
+    	Greetings greeterApp = new Greetings();
+ 
+    	// Use the variable to access Greetings methods
+    	// using dot notation.
+        String dateMessage = greeterApp.getCurrentDate();
+        System.out.println(dateMessage);
     }
 }
 
@@ -13,3 +21,4 @@ public class Test {
 // String ourString = "hello world";    // 
 // ourInt = "Hello world";    // 3 ERROR!
 
+ 
